@@ -19,6 +19,13 @@
         </div>
         <div class="col">
             <p>メインコンテンツエリア</p>
+            <form method="post">
+                @csrf
+                <div>
+                    <input type="text" name="content" />
+                <button formaction="{{route('todo.add')}}" class="btn btn-primary" placeholder="Todo">保存する</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
